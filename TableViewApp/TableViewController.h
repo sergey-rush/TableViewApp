@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  TableViewApp
 //
 //  Created by Admin on 20/11/2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TableViewController : UITableViewController
 
 @end
-
