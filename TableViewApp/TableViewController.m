@@ -1,11 +1,3 @@
-//
-//  TableViewController.m
-//  TableViewApp
-//
-//  Created by Admin on 20/11/2017.
-//  Copyright © 2017 Admin. All rights reserved.
-//
-
 #import "TableViewController.h"
 
 @interface TableViewController ()
@@ -32,21 +24,20 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 3;
+
+    NSInteger sections = 3;
+    return sections;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    if(section==0)
-    {
+  
+    if(section==0){
         return 2;
-    }else if(section ==1)
-    {
+    }
+    else if(section==1){
         return 1;
     }
-    else
-    {
+    else{
         return 3;
     }
 }
@@ -66,7 +57,7 @@
         cell.textLabel.text = @"another section";
     }
     else{
-        cell.textLabel.text = [NSString stringWithFormat:@"cell %i", indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"cell %i", (int)indexPath.row];
     }
     
     return cell;
